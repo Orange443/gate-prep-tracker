@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Log - GATE 2027</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      <span>GATE 2027</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        Dashboard</a></li>
+      <li><a href="syllabus.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Syllabus</a></li>
+      <li><a href="studylog.html" class="active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Study Log</a></li>
+      <li><a href="problems.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        Problems</a></li>
+      <li><a href="mocks.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        Mocks</a></li>
+      <li><a href="weaktopics.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        Weak Topics</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </nav>
+
+  <main class="main-content">
+    <div class="page-header animate-in">
+      <h1>Study Log</h1>
+      <p>Track your daily study sessions and maintain consistency</p>
+    </div>
+
+    <div class="stats-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="stat-card animate-in">
+        <div class="stat-icon blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="stat-label">Total Hours</div>
+        <div class="stat-value" id="totalHours">0</div>
+      </div>
+      <div class="stat-card animate-in">
+        <div class="stat-icon green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <div class="stat-label">Total Problems</div>
+        <div class="stat-value" id="totalProblems">0</div>
+      </div>
+      <div class="stat-card animate-in">
+        <div class="stat-icon yellow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>
+        </div>
+        <div class="stat-label">Total Sessions</div>
+        <div class="stat-value" id="totalSessions">0</div>
+      </div>
+    </div>
+
+    <div class="form-card animate-in">
+      <h3>Log a Study Session</h3>
+      <form id="studyForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="logDate">Date</label>
+            <input type="date" id="logDate" required>
+          </div>
+          <div class="form-group">
+            <label for="logSubject">Subject</label>
+            <select id="logSubject" required>
+              <option value="">Select subject</option>
+              <option value="Probability & Statistics">Probability & Statistics</option>
+              <option value="Linear Algebra">Linear Algebra</option>
+              <option value="Calculus">Calculus</option>
+              <option value="Programming & DSA">Programming & DSA</option>
+              <option value="Databases">Databases</option>
+              <option value="Machine Learning">Machine Learning</option>
+              <option value="Artificial Intelligence">Artificial Intelligence</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="logHours">Hours Studied</label>
+            <input type="number" id="logHours" min="0" max="24" step="0.5" placeholder="e.g. 3" required>
+          </div>
+          <div class="form-group">
+            <label for="logProblems">Problems Solved</label>
+            <input type="number" id="logProblems" min="0" placeholder="e.g. 15" required>
+          </div>
+          <div class="form-group full-width">
+            <label for="logNotes">Notes</label>
+            <textarea id="logNotes" placeholder="What did you study? Key takeaways..."></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Add Entry
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="card animate-in">
+      <div class="card-header">
+        <h3 class="card-title">Study History</h3>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Subject</th>
+              <th>Hours</th>
+              <th>Problems</th>
+              <th>Notes</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="logTableBody">
+          </tbody>
+        </table>
+        <div class="empty-state" id="emptyState">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <p>No study sessions logged yet. Start tracking!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/studylog.js"></script>
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
