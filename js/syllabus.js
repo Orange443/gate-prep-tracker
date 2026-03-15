@@ -3,40 +3,89 @@
 
   const SYLLABUS_DATA = {
     'Probability & Statistics': [
-      'Conditional Probability', 'Bayes Theorem', 'Random Variables',
-      'Distributions', 'Central Limit Theorem', 'Hypothesis Testing',
-      'Estimation', 'Correlation & Regression'
+      'Counting (Permutations & Combinations)',
+      'Sample Space, Events & Independence',
+      'Conditional, Marginal & Joint Probability',
+      'Bayes\' Theorem',
+      'Random Variables',
+      'Conditional Expectation & Variance',
+      'Mean, Median, Mode & Standard Deviation',
+      'Correlation & Covariance',
+      'Discrete Distributions (Uniform, Bernoulli, Binomial, Poisson)',
+      'Continuous Distributions (Uniform, Exponential, Normal, t, Chi-squared)',
+      'Cumulative Distribution Function',
+      'Central Limit Theorem',
+      'Confidence Intervals',
+      'Hypothesis Testing (z-test, t-test, Chi-squared test)'
     ],
     'Linear Algebra': [
-      'Vector Spaces', 'Linear Independence', 'Rank',
-      'Eigenvalues', 'Eigenvectors', 'SVD',
-      'Matrix Decomposition', 'Orthogonality'
+      'Vector Spaces & Subspaces',
+      'Linear Dependence & Independence',
+      'Matrices (Projection, Orthogonal, Idempotent, Partition)',
+      'Quadratic Forms',
+      'Systems of Linear Equations',
+      'Gaussian Elimination',
+      'Eigenvalues & Eigenvectors',
+      'Determinant, Rank & Nullity',
+      'LU Decomposition',
+      'Singular Value Decomposition (SVD)'
     ],
-    'Calculus': [
-      'Limits & Continuity', 'Differentiation', 'Integration',
-      'Partial Derivatives', 'Maxima & Minima', 'Gradient & Hessian',
-      'Taylor Series', 'Multivariable Calculus'
+    'Calculus & Optimization': [
+      'Functions of Single Variable',
+      'Limits & Continuity',
+      'Differentiability',
+      'Taylor Series',
+      'Maxima & Minima',
+      'Optimization Techniques'
     ],
-    'Programming & DSA': [
-      'Arrays & Strings', 'Linked Lists', 'Trees & Graphs',
-      'Sorting & Searching', 'Dynamic Programming', 'Greedy Algorithms',
-      'Complexity Analysis', 'Hashing'
+    'Programming, DSA': [
+      'Python Programming',
+      'Stacks & Queues',
+      'Linked Lists',
+      'Trees',
+      'Hash Tables',
+      'Linear & Binary Search',
+      'Selection, Bubble & Insertion Sort',
+      'Merge Sort & Quick Sort',
+      'Graph Traversals (BFS, DFS)',
+      'Shortest Path Algorithms'
     ],
-    'Databases': [
-      'ER Model', 'Relational Model', 'SQL',
-      'Normalization', 'Transactions', 'Indexing',
-      'NoSQL Basics'
+    'DBMS & Warehousing': [
+      'ER Model',
+      'Relational Model',
+      'Relational Algebra & Tuple Calculus',
+      'SQL',
+      'Integrity Constraints',
+      'Normal Forms (1NF, 2NF, 3NF, BCNF)',
+      'File Organization & Indexing',
+      'Data Transformation (Normalization, Discretization, Sampling)',
+      'Multidimensional Data Models (Star, Snowflake Schema)',
+      'Concept Hierarchies & Measures'
     ],
     'Machine Learning': [
-      'Linear Regression', 'Logistic Regression', 'Decision Trees',
-      'SVM', 'Clustering', 'Dimensionality Reduction',
-      'Neural Networks', 'Bias-Variance Tradeoff', 'Regularization',
-      'Ensemble Methods'
+      'Linear & Ridge Regression',
+      'Logistic Regression',
+      'k-Nearest Neighbor (k-NN)',
+      'Naive Bayes Classifier',
+      'Linear Discriminant Analysis (LDA)',
+      'Support Vector Machine (SVM)',
+      'Decision Trees',
+      'Bias-Variance Tradeoff',
+      'Cross-Validation (LOO, k-fold)',
+      'Multi-Layer Perceptron & Feed-Forward NN',
+      'k-Means & k-Medoid Clustering',
+      'Hierarchical Clustering',
+      'Principal Component Analysis (PCA)'
     ],
     'Artificial Intelligence': [
-      'Search Algorithms', 'Adversarial Search', 'Knowledge Representation',
-      'Logic & Inference', 'Probabilistic Reasoning', 'NLP Basics',
-      'Reinforcement Learning'
+      'Uninformed Search (BFS, DFS, DLS, Iterative Deepening)',
+      'Informed Search (A*, Heuristics, Admissibility)',
+      'Adversarial Search (Minimax, Alpha-Beta Pruning)',
+      'Propositional Logic (Syntax, Semantics, Resolution)',
+      'Predicate Logic (Quantifiers, Unification, Chaining)',
+      'Conditional Independence (Bayesian Networks)',
+      'Variable Elimination',
+      'Approximate Inference (Sampling)'
     ]
   };
 
