@@ -1,0 +1,333 @@
+{
+  "goal": "GATE 2027 Top 25 Rank",
+  "daily_study_target_hours": 5,
+  "weekly_problem_target": 150,
+  "phases": [
+    {
+      "phase": "Phase 1 - Syllabus Completion",
+      "duration_months": 4,
+      "weeks": [
+        {
+          "week": 1,
+          "focus": "Linear Algebra Foundations",
+          "topics": [
+            "Vector spaces",
+            "Linear independence",
+            "Span",
+            "Matrix operations",
+            "Rank"
+          ],
+          "problem_target": 60,
+          "daily_plan": [
+            { "day": "Mon", "blocks": ["2h Vector Spaces & Subspaces", "1h Linear Independence", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Span & Basis", "1h Matrix Operations", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h Rank & Nullity", "1h Gaussian Elimination", "1h Problems", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Systems of Linear Equations", "1h Practice Problems", "1h Mixed Problems", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Projection & Orthogonal Matrices", "1h Problems", "1h Weak Topic Review", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Full Topic Revision", "2h Problem Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
+          ]
+        },
+        {
+          "week": 2,
+          "focus": "Eigenvalues and Eigenvectors",
+          "topics": [
+            "Eigenvalues",
+            "Eigenvectors",
+            "Diagonalization",
+            "Orthogonal matrices"
+          ],
+          "problem_target": 60,
+          "daily_plan": [
+            { "day": "Mon", "blocks": ["2h Eigenvalue Theory", "1h Characteristic Equation", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Eigenvectors & Properties", "1h Diagonalization", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h SVD Introduction", "1h LU Decomposition", "1h Problems", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Quadratic Forms", "1h Orthogonal Matrices", "1h Problems", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Mixed LA Problems", "1h PYQ Practice", "1h Weak Areas", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Full LA Revision", "2h Problem Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
+          ]
+        },
+        {
+          "week": 3,
+          "focus": "Probability Basics",
+          "topics": [
+            "Sample space",
+            "Events",
+            "Conditional probability",
+            "Independence",
+            "Bayes theorem"
+          ],
+          "problem_target": 70,
+          "daily_plan": [
+            { "day": "Mon", "blocks": ["2h Sample Space & Events", "1h Counting Methods", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Conditional Probability", "1h Independence", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h Bayes Theorem (Theory)", "1h Bayes Problems", "1h Mixed Problems", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Joint & Marginal Probability", "1h Practice Problems", "1h PYQ", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Advanced Bayes Applications", "1h Problems", "1h Weak Areas", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Full Probability Revision", "2h Problem Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
+          ]
+        },
+        {
+          "week": 4,
+          "focus": "Probability Distributions",
+          "topics": [
+            "Bernoulli distribution",
+            "Binomial distribution",
+            "Poisson distribution",
+            "Normal distribution",
+            "Expectation and variance"
+          ],
+          "problem_target": 70,
+          "daily_plan": [
+            { "day": "Mon", "blocks": ["2h Bernoulli & Binomial", "1h Expectation", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Poisson Distribution", "1h Variance & Covariance", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h Normal Distribution", "1h Standard Normal & Z-scores", "1h Problems", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h t-distribution & Chi-squared", "1h CDF", "1h Problems", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Central Limit Theorem", "1h Confidence Intervals", "1h Problems", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Full Distribution Revision", "2h Problem Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
+          ]
+        },
+        {
+          "week": 5,
+          "focus": "Calculus Foundations",
+          "topics": [
+            "Limits",
+            "Continuity",
+            "Derivatives",
+            "Chain rule"
+          ],
+          "problem_target": 60,
+          "daily_plan": [
+            { "day": "Mon", "blocks": ["2h Limits & Continuity", "1h L'Hôpital's Rule", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Differentiation Rules", "1h Chain Rule", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h Higher-Order Derivatives", "1h Applications", "1h Problems", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Integration Basics", "1h Practice Problems", "1h PYQ", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Mixed Calculus Problems", "1h Weak Areas", "1h Problems", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Full Calculus Revision", "2h Problem Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
+          ]
+        },
+        {
+          "week": 6,
+          "focus": "Optimization",
+          "topics": [
+            "Maxima",
+            "Minima",
+            "Taylor series",
+            "Gradient intuition"
+          ],
+          "problem_target": 60,
+          "daily_plan": [
+            { "day": "Mon", "blocks": ["2h Maxima & Minima", "1h First/Second Derivative Test", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Taylor Series Expansion", "1h Approximations", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h Optimization Techniques", "1h Gradient Intuition", "1h Problems", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Applied Optimization", "1h Practice Problems", "1h PYQ", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Full Calculus+Optimization Revision", "1h Problems", "1h Weak Areas", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Math Cumulative Revision", "2h Problem Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
+          ]
+        },
+        {
+          "week": 7,
+          "focus": "Data Structures",
+          "topics": [
+            "Stacks",
+            "Queues",
+            "Linked lists",
+            "Trees"
+          ],
+          "problem_target": 80,
+          "daily_plan": [
+            { "day": "Mon", "blocks": ["2h Stacks (Theory + Python)", "1h Stack Problems", "1h Coding", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Queues & Deques", "1h Queue Problems", "1h Coding", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h Linked Lists", "1h LL Problems", "1h Coding", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Binary Trees", "1h Tree Traversals", "1h Coding", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h BST & Heap", "1h Problems", "1h Weak Areas", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Full DS Revision", "2h Coding Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
+          ]
+        },
+        {
+          "week": 8,
+          "focus": "Algorithms",
+          "topics": [
+            "Sorting algorithms",
+            "Binary search",
+            "Merge sort",
+            "Quick sort"
+          ],
+          "problem_target": 80,
+          "daily_plan": [
+            { "day": "Mon", "blocks": ["2h Selection & Bubble Sort", "1h Insertion Sort", "1h Coding", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Merge Sort (Theory + Code)", "1h Complexity Analysis", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h Quick Sort & Partitioning", "1h Divide & Conquer", "1h Coding", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Binary Search Variants", "1h Search Problems", "1h Coding", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Hash Tables", "1h Hashing Problems", "1h Weak Areas", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Full Algo Revision", "2h Coding Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
+          ]
+        },
+        {
+          "week": 9,
+          "focus": "Graphs",
+          "topics": [
+            "Graph basics",
+            "BFS",
+            "DFS",
+            "Shortest path"
+          ],
+          "problem_target": 80,
+          "daily_plan": [
+            { "day": "Mon", "blocks": ["2h Graph Representations", "1h Adjacency Matrix/List", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h BFS (Theory + Code)", "1h BFS Applications", "1h Coding", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h DFS (Theory + Code)", "1h DFS Applications", "1h Coding", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Dijkstra's Algorithm", "1h Shortest Path Problems", "1h Coding", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Mixed Graph Problems", "1h PYQ Practice", "1h Weak Areas", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Full DSA Cumulative Revision", "2h Coding Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
+          ]
+        },
+        {
+          "week": 10,
+          "focus": "Databases",
+          "topics": [
+            "ER model",
+            "Relational algebra",
+            "SQL queries",
+            "Normalization"
+          ],
+          "problem_target": 50,
+          "daily_plan": [
+            { "day": "Mon", "blocks": ["2h ER Model & Diagrams", "1h Relational Model", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Relational Algebra", "1h Tuple Calculus", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h SQL (Joins, Subqueries)", "1h SQL Practice", "1h Problems", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Normalization (1NF-BCNF)", "1h Integrity Constraints", "1h Problems", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Indexing & File Org", "1h Data Warehousing", "1h Problems", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Full DB Revision", "2h Problem Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
+          ]
+        },
+        {
+          "week": 11,
+          "focus": "Machine Learning (Supervised)",
+          "topics": [
+            "Linear regression",
+            "Logistic regression",
+            "Bias variance",
+            "Cross validation"
+          ],
+          "problem_target": 80,
+          "daily_plan": [
+            { "day": "Mon", "blocks": ["2h Linear Regression (Math)", "1h Ridge Regression", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Logistic Regression", "1h Gradient Descent", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h Bias-Variance Tradeoff", "1h Regularization", "1h Problems", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Cross-Validation (LOO, k-fold)", "1h Model Selection", "1h Problems", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Mixed ML Problems", "1h PYQ Practice", "1h Weak Areas", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Full ML Revision", "2h Problem Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
+          ]
+        },
+        {
+          "week": 12,
+          "focus": "Machine Learning (Advanced)",
+          "topics": [
+            "KNN",
+            "Naive Bayes",
+            "Decision trees",
+            "SVM"
+          ],
+          "problem_target": 80,
+          "daily_plan": [
+            { "day": "Mon", "blocks": ["2h k-NN (Theory + Math)", "1h Distance Metrics", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Naive Bayes Classifier", "1h LDA", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h Decision Trees", "1h Entropy & Information Gain", "1h Problems", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h SVM (Theory + Kernel)", "1h Margin Maximization", "1h Problems", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Mixed Classification Problems", "1h PYQ", "1h Weak Areas", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Full ML Cumulative Revision", "2h Problem Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
+          ]
+        },
+        {
+          "week": 13,
+          "focus": "Unsupervised Learning",
+          "topics": [
+            "K-means",
+            "Hierarchical clustering",
+            "PCA"
+          ],
+          "problem_target": 70,
+          "daily_plan": [
+            { "day": "Mon", "blocks": ["2h k-Means Clustering", "1h k-Medoid", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Hierarchical Clustering", "1h Linkage Methods", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h PCA (Theory + Math)", "1h Dimensionality Reduction", "1h Problems", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Neural Networks (MLP)", "1h Feed-Forward NN", "1h Problems", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Full ML Revision", "1h PYQ Practice", "1h Weak Areas", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Complete ML Revision", "2h Problem Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
+          ]
+        },
+        {
+          "week": 14,
+          "focus": "Artificial Intelligence",
+          "topics": [
+            "Search algorithms",
+            "Propositional logic",
+            "Predicate logic",
+            "Inference"
+          ],
+          "problem_target": 60,
+          "daily_plan": [
+            { "day": "Mon", "blocks": ["2h Uninformed Search (BFS, DFS, DLS)", "1h Iterative Deepening", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Informed Search (A*)", "1h Heuristics & Admissibility", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h Adversarial Search (Minimax)", "1h Alpha-Beta Pruning", "1h Problems", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Propositional Logic", "1h Resolution & Inference", "1h Problems", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Predicate Logic", "1h Unification & Chaining", "1h Weak Areas", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Full AI Revision", "2h Problem Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
+          ]
+        },
+        {
+          "week": 15,
+          "focus": "Probabilistic AI",
+          "topics": [
+            "Bayesian networks",
+            "Conditional independence",
+            "Variable elimination"
+          ],
+          "problem_target": 60,
+          "daily_plan": [
+            { "day": "Mon", "blocks": ["2h Bayesian Networks", "1h Conditional Independence", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Variable Elimination", "1h Exact Inference", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h Approximate Inference (Sampling)", "1h MCMC Basics", "1h Problems", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Mixed AI Problems", "1h PYQ Practice", "1h Weak Areas", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Full AI Cumulative Revision", "1h Problems", "1h Weak Areas", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Complete AI Revision", "2h Problem Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
+          ]
+        },
+        {
+          "week": 16,
+          "focus": "Full Revision",
+          "topics": [
+            "Linear algebra revision",
+            "Probability revision",
+            "ML revision"
+          ],
+          "problem_target": 120,
+          "daily_plan": [
+            { "day": "Mon", "blocks": ["2h Linear Algebra Rapid Revision", "1h Probability Revision", "1h Problems", "1h Mock"] },
+            { "day": "Tue", "blocks": ["2h Calculus & Optimization Revision", "1h DSA Revision", "1h Problems", "1h Mock"] },
+            { "day": "Wed", "blocks": ["2h Database Revision", "1h ML Supervised Revision", "1h Problems", "1h Mock"] },
+            { "day": "Thu", "blocks": ["2h ML Unsupervised + NN Revision", "1h AI Revision", "1h Problems", "1h Mock"] },
+            { "day": "Fri", "blocks": ["2h Probabilistic AI Revision", "1h Weak Topics Only", "1h Problems", "1h Mock"] },
+            { "day": "Sat", "blocks": ["3h Full Mock Test", "2h Analysis & Correction"] },
+            { "day": "Sun", "blocks": ["3h Full Mock Test", "1h Final Weak Area Review"] }
+          ]
+        }
+      ]
+    }
+  ]
+}
