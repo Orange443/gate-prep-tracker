@@ -112,22 +112,22 @@
         },
         {
           "week": 6,
-          "focus": "Optimization",
+          "focus": "Calculus Optimization",
           "topics": [
-            "Maxima",
-            "Minima",
-            "Taylor series",
-            "Gradient intuition"
+            "Single-variable maxima and minima",
+            "Taylor series approximation",
+            "Multivariable optimization",
+            "Constrained optimization"
           ],
-          "problem_target": 60,
+          "problem_target": 70,
           "daily_plan": [
-            { "day": "Mon", "blocks": ["2h Maxima & Minima", "1h First/Second Derivative Test", "1h Problems", "1h Revision"] },
-            { "day": "Tue", "blocks": ["2h Taylor Series Expansion", "1h Approximations", "1h Problems", "1h Revision"] },
-            { "day": "Wed", "blocks": ["2h Optimization Techniques", "1h Gradient Intuition", "1h Problems", "1h Revision"] },
-            { "day": "Thu", "blocks": ["2h Applied Optimization", "1h Practice Problems", "1h PYQ", "1h Revision"] },
-            { "day": "Fri", "blocks": ["2h Full Calculus+Optimization Revision", "1h Problems", "1h Weak Areas", "1h Revision"] },
-            { "day": "Sat", "blocks": ["2h Math Cumulative Revision", "2h Problem Marathon", "1h Mock Questions"] },
-            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
+            { "day": "Mon", "blocks": ["2h Single-Variable Maxima & Minima", "1h First/Second Derivative Test", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Taylor Series Expansion", "1h Approximation Questions", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h Partial Derivatives & Critical Points", "1h Gradient and Hessian Basics", "1h Problems", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Constrained Optimization", "1h Lagrange Multipliers", "1h PYQ", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Mixed Calculus Optimization Problems", "1h Weak Areas", "1h Problems", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Full Calculus Optimization Revision", "2h Problem Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Formula Revision", "1h Light Revision"] }
           ]
         },
         {
