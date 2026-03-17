@@ -87,10 +87,22 @@
 
   let scoreChartInst = null;
 
+  function getTheme() {
+    const styles = getComputedStyle(document.documentElement);
+    return {
+      success: styles.getPropertyValue('--success').trim(),
+      textPrimary: styles.getPropertyValue('--text-primary').trim(),
+      textMuted: styles.getPropertyValue('--text-muted').trim(),
+      borderSoft: styles.getPropertyValue('--border-soft').trim(),
+      bgSecondary: styles.getPropertyValue('--bg-secondary').trim(),
+    };
+  }
+
   function renderScoreChart() {
     const tests = loadData();
     const ctx = document.getElementById('scoreChart');
     if (!ctx) return;
+    const theme = getTheme();
 
     const sorted = [...tests].sort((a, b) => a.date.localeCompare(b.date));
     const labels = sorted.map(t => t.name || t.date);
@@ -104,11 +116,11 @@
         datasets: [{
           label: 'Score',
           data: data,
-          borderColor: '#34d399',
-          backgroundColor: 'rgba(52, 211, 153, 0.1)',
+          borderColor: theme.success,
+          backgroundColor: 'rgba(47, 124, 90, 0.12)',
           tension: 0.3,
           fill: true,
-          pointBackgroundColor: '#34d399',
+          pointBackgroundColor: theme.success,
           pointRadius: 6,
           pointHoverRadius: 8,
           borderWidth: 2.5
@@ -120,26 +132,26 @@
         plugins: {
           legend: { display: false },
           tooltip: {
-            backgroundColor: '#1e293b',
-            titleColor: '#f1f5f9',
-            bodyColor: '#94a3b8',
-            borderColor: '#334155',
-            borderWidth: 1,
+            backgroundColor: theme.bgSecondary,
+            titleColor: theme.textPrimary,
+            bodyColor: theme.textMuted,
+            borderColor: theme.borderSoft,
+            borderWidth: 2,
             padding: 10,
             cornerRadius: 8
           }
         },
         scales: {
           x: {
-            grid: { color: 'rgba(51,65,85,0.5)' },
-            ticks: { color: '#94a3b8', font: { family: 'JetBrains Mono', size: 11 }, maxRotation: 45 }
+            grid: { color: theme.borderSoft },
+            ticks: { color: theme.textMuted, font: { family: 'JetBrains Mono', size: 11 }, maxRotation: 45 }
           },
           y: {
             beginAtZero: true,
             max: 100,
-            grid: { color: 'rgba(51,65,85,0.5)' },
+            grid: { color: theme.borderSoft },
             ticks: {
-              color: '#94a3b8',
+              color: theme.textMuted,
               font: { family: 'JetBrains Mono', size: 11 },
               callback: function (v) { return v + '%'; }
             }

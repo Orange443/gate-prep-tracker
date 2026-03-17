@@ -239,10 +239,26 @@
   let mocksChartInstance = null;
   let subjectChartInstance = null;
 
+  function getTheme() {
+    const styles = getComputedStyle(document.documentElement);
+    return {
+      accent: styles.getPropertyValue('--accent').trim(),
+      accentSecondary: styles.getPropertyValue('--accent-secondary').trim(),
+      success: styles.getPropertyValue('--success').trim(),
+      warning: styles.getPropertyValue('--warning').trim(),
+      danger: styles.getPropertyValue('--danger').trim(),
+      textMuted: styles.getPropertyValue('--text-muted').trim(),
+      borderSoft: styles.getPropertyValue('--border-soft').trim(),
+      bgSecondary: styles.getPropertyValue('--bg-secondary').trim(),
+    };
+  }
+
   function renderProblemsChart(logs) {
     const canvas = document.getElementById('problemsChart');
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
+
+    const theme = getTheme();
 
     const weekMap = {};
     logs.forEach(l => {
@@ -262,10 +278,10 @@
         datasets: [{
           label: 'Problems',
           data: data,
-          backgroundColor: 'rgba(56, 189, 248, 0.6)',
-          borderColor: '#38bdf8',
-          borderWidth: 1,
-          borderRadius: 6,
+          backgroundColor: 'rgba(191, 106, 63, 0.68)',
+          borderColor: theme.accent,
+          borderWidth: 2,
+          borderRadius: 10,
           maxBarThickness: 40
         }]
       },
@@ -277,13 +293,13 @@
         },
         scales: {
           x: {
-            grid: { color: 'rgba(51,65,85,0.5)' },
-            ticks: { color: '#94a3b8', font: { family: 'JetBrains Mono', size: 11 } }
+            grid: { color: theme.borderSoft },
+            ticks: { color: theme.textMuted, font: { family: 'JetBrains Mono', size: 11 } }
           },
           y: {
             beginAtZero: true,
-            grid: { color: 'rgba(51,65,85,0.5)' },
-            ticks: { color: '#94a3b8', font: { family: 'JetBrains Mono', size: 11 } }
+            grid: { color: theme.borderSoft },
+            ticks: { color: theme.textMuted, font: { family: 'JetBrains Mono', size: 11 } }
           }
         }
       }
@@ -294,6 +310,8 @@
     const canvas = document.getElementById('mocksChart');
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
+
+    const theme = getTheme();
 
     const sorted = [...tests].sort((a, b) => a.date.localeCompare(b.date));
     const labels = sorted.map(t => t.name || t.date);
@@ -307,14 +325,14 @@
         datasets: [{
           label: 'Score',
           data: data,
-          borderColor: '#34d399',
-          backgroundColor: 'rgba(52, 211, 153, 0.1)',
+          borderColor: theme.success,
+          backgroundColor: 'rgba(47, 124, 90, 0.12)',
           tension: 0.3,
           fill: true,
-          pointBackgroundColor: '#34d399',
+          pointBackgroundColor: theme.success,
           pointRadius: 5,
           pointHoverRadius: 7,
-          borderWidth: 2
+          borderWidth: 3
         }]
       },
       options: {
@@ -325,14 +343,14 @@
         },
         scales: {
           x: {
-            grid: { color: 'rgba(51,65,85,0.5)' },
-            ticks: { color: '#94a3b8', font: { family: 'JetBrains Mono', size: 11 }, maxRotation: 45 }
+            grid: { color: theme.borderSoft },
+            ticks: { color: theme.textMuted, font: { family: 'JetBrains Mono', size: 11 }, maxRotation: 45 }
           },
           y: {
             beginAtZero: true,
             max: 100,
-            grid: { color: 'rgba(51,65,85,0.5)' },
-            ticks: { color: '#94a3b8', font: { family: 'JetBrains Mono', size: 11 } }
+            grid: { color: theme.borderSoft },
+            ticks: { color: theme.textMuted, font: { family: 'JetBrains Mono', size: 11 } }
           }
         }
       }
@@ -344,13 +362,20 @@
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
 
+    const theme = getTheme();
+
     const progress = getSubjectProgress();
     const labels = Object.keys(progress);
     const data = Object.values(progress);
 
     const colors = [
-      '#38bdf8', '#34d399', '#fbbf24', '#f87171',
-      '#a78bfa', '#fb923c', '#818cf8'
+      theme.accent,
+      theme.accentSecondary,
+      theme.warning,
+      theme.danger,
+      '#6d5c92',
+      '#9a6a2c',
+      '#7687a5'
     ];
 
     if (subjectChartInstance) subjectChartInstance.destroy();
@@ -361,10 +386,10 @@
         datasets: [{
           label: 'Completion %',
           data: data,
-          backgroundColor: colors.map(c => c + '99'),
+          backgroundColor: colors.map(c => c + 'aa'),
           borderColor: colors,
-          borderWidth: 1,
-          borderRadius: 6,
+          borderWidth: 2,
+          borderRadius: 10,
           maxBarThickness: 50
         }]
       },
@@ -379,16 +404,16 @@
           x: {
             beginAtZero: true,
             max: 100,
-            grid: { color: 'rgba(51,65,85,0.5)' },
+            grid: { color: theme.borderSoft },
             ticks: {
-              color: '#94a3b8',
+              color: theme.textMuted,
               font: { family: 'JetBrains Mono', size: 11 },
               callback: function (v) { return v + '%'; }
             }
           },
           y: {
             grid: { display: false },
-            ticks: { color: '#94a3b8', font: { size: 12 } }
+            ticks: { color: theme.textMuted, font: { size: 12 } }
           }
         }
       }

@@ -98,8 +98,23 @@
   let subjectChartInst = null;
   let weeklyChartInst = null;
 
+  function getTheme() {
+    const styles = getComputedStyle(document.documentElement);
+    return {
+      accent: styles.getPropertyValue('--accent').trim(),
+      accentSecondary: styles.getPropertyValue('--accent-secondary').trim(),
+      success: styles.getPropertyValue('--success').trim(),
+      warning: styles.getPropertyValue('--warning').trim(),
+      danger: styles.getPropertyValue('--danger').trim(),
+      textMuted: styles.getPropertyValue('--text-muted').trim(),
+      borderSoft: styles.getPropertyValue('--border-soft').trim(),
+      paperBorder: styles.getPropertyValue('--bg-primary').trim(),
+    };
+  }
+
   function renderCharts() {
     const logs = loadData();
+    const theme = getTheme();
 
     // Subject chart (doughnut)
     const subjectMap = {};
@@ -109,7 +124,7 @@
 
     const subjects = Object.keys(subjectMap);
     const subjectData = Object.values(subjectMap);
-    const colors = ['#38bdf8', '#34d399', '#fbbf24', '#f87171', '#a78bfa', '#fb923c', '#818cf8'];
+    const colors = [theme.accent, theme.accentSecondary, theme.warning, theme.danger, '#6d5c92', '#9a6a2c', '#7687a5'];
 
     const subjectCtx = document.getElementById('subjectProbChart');
     if (subjectCtx) {
@@ -121,7 +136,7 @@
           datasets: [{
             data: subjectData,
             backgroundColor: colors.slice(0, subjects.length),
-            borderColor: '#1e293b',
+            borderColor: theme.paperBorder,
             borderWidth: 3
           }]
         },
@@ -131,7 +146,7 @@
           plugins: {
             legend: {
               position: 'bottom',
-              labels: { color: '#94a3b8', font: { size: 12 }, padding: 12 }
+              labels: { color: theme.textMuted, font: { size: 12 }, padding: 12 }
             }
           }
         }
@@ -159,10 +174,10 @@
           datasets: [{
             label: 'Problems',
             data: weekData,
-            backgroundColor: 'rgba(56, 189, 248, 0.6)',
-            borderColor: '#38bdf8',
-            borderWidth: 1,
-            borderRadius: 6,
+            backgroundColor: 'rgba(191, 106, 63, 0.68)',
+            borderColor: theme.accent,
+            borderWidth: 2,
+            borderRadius: 10,
             maxBarThickness: 40
           }]
         },
@@ -172,13 +187,13 @@
           plugins: { legend: { display: false } },
           scales: {
             x: {
-              grid: { color: 'rgba(51,65,85,0.5)' },
-              ticks: { color: '#94a3b8', font: { family: 'JetBrains Mono', size: 11 } }
+              grid: { color: theme.borderSoft },
+              ticks: { color: theme.textMuted, font: { family: 'JetBrains Mono', size: 11 } }
             },
             y: {
               beginAtZero: true,
-              grid: { color: 'rgba(51,65,85,0.5)' },
-              ticks: { color: '#94a3b8', font: { family: 'JetBrains Mono', size: 11 } }
+              grid: { color: theme.borderSoft },
+              ticks: { color: theme.textMuted, font: { family: 'JetBrains Mono', size: 11 } }
             }
           }
         }
