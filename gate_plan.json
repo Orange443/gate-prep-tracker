@@ -9,42 +9,41 @@
       "weeks": [
         {
           "week": 1,
-          "focus": "Linear Algebra Foundations",
+          "focus": "Calculus Optimization",
           "topics": [
-            "Vector spaces",
-            "Linear independence",
-            "Span",
-            "Matrix operations",
-            "Rank"
+            "Single-variable maxima and minima",
+            "Taylor series approximation",
+            "Multivariable optimization",
+            "Constrained optimization"
           ],
-          "problem_target": 60,
+          "problem_target": 70,
           "daily_plan": [
-            { "day": "Mon", "blocks": ["2h Vector Spaces & Subspaces", "1h Linear Independence", "1h Problems", "1h Revision"] },
-            { "day": "Tue", "blocks": ["2h Span & Basis", "1h Matrix Operations", "1h Problems", "1h Revision"] },
-            { "day": "Wed", "blocks": ["2h Rank & Nullity", "1h Gaussian Elimination", "1h Problems", "1h Revision"] },
-            { "day": "Thu", "blocks": ["2h Systems of Linear Equations", "1h Practice Problems", "1h Mixed Problems", "1h Revision"] },
-            { "day": "Fri", "blocks": ["2h Projection & Orthogonal Matrices", "1h Problems", "1h Weak Topic Review", "1h Revision"] },
-            { "day": "Sat", "blocks": ["2h Full Topic Revision", "2h Problem Marathon", "1h Mock Questions"] },
-            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
+            { "day": "Mon", "blocks": ["2h Single-Variable Maxima & Minima", "1h First/Second Derivative Test", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Taylor Series Expansion", "1h Approximation Questions", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h Partial Derivatives & Critical Points", "1h Gradient and Hessian Basics", "1h Problems", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Constrained Optimization", "1h Lagrange Multipliers", "1h PYQ", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Mixed Calculus Optimization Problems", "1h Weak Areas", "1h Problems", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Full Calculus Optimization Revision", "2h Problem Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Formula Revision", "1h Light Revision"] }
           ]
         },
         {
           "week": 2,
-          "focus": "Eigenvalues and Eigenvectors",
+          "focus": "Calculus Foundations",
           "topics": [
-            "Eigenvalues",
-            "Eigenvectors",
-            "Diagonalization",
-            "Orthogonal matrices"
+            "Limits",
+            "Continuity",
+            "Derivatives",
+            "Chain rule"
           ],
           "problem_target": 60,
           "daily_plan": [
-            { "day": "Mon", "blocks": ["2h Eigenvalue Theory", "1h Characteristic Equation", "1h Problems", "1h Revision"] },
-            { "day": "Tue", "blocks": ["2h Eigenvectors & Properties", "1h Diagonalization", "1h Problems", "1h Revision"] },
-            { "day": "Wed", "blocks": ["2h SVD Introduction", "1h LU Decomposition", "1h Problems", "1h Revision"] },
-            { "day": "Thu", "blocks": ["2h Quadratic Forms", "1h Orthogonal Matrices", "1h Problems", "1h Revision"] },
-            { "day": "Fri", "blocks": ["2h Mixed LA Problems", "1h PYQ Practice", "1h Weak Areas", "1h Revision"] },
-            { "day": "Sat", "blocks": ["2h Full LA Revision", "2h Problem Marathon", "1h Mock Questions"] },
+            { "day": "Mon", "blocks": ["2h Limits & Continuity", "1h L'Hôpital's Rule", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Differentiation Rules", "1h Chain Rule", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h Higher-Order Derivatives", "1h Applications", "1h Problems", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Integration Basics", "1h Practice Problems", "1h PYQ", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Mixed Calculus Problems", "1h Weak Areas", "1h Problems", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Full Calculus Revision", "2h Problem Marathon", "1h Mock Questions"] },
             { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
           ]
         },
@@ -92,42 +91,43 @@
         },
         {
           "week": 5,
-          "focus": "Calculus Foundations",
+          "focus": "Linear Algebra Foundations",
           "topics": [
-            "Limits",
-            "Continuity",
-            "Derivatives",
-            "Chain rule"
+            "Vector spaces",
+            "Linear independence",
+            "Span",
+            "Matrix operations",
+            "Rank"
           ],
           "problem_target": 60,
           "daily_plan": [
-            { "day": "Mon", "blocks": ["2h Limits & Continuity", "1h L'Hôpital's Rule", "1h Problems", "1h Revision"] },
-            { "day": "Tue", "blocks": ["2h Differentiation Rules", "1h Chain Rule", "1h Problems", "1h Revision"] },
-            { "day": "Wed", "blocks": ["2h Higher-Order Derivatives", "1h Applications", "1h Problems", "1h Revision"] },
-            { "day": "Thu", "blocks": ["2h Integration Basics", "1h Practice Problems", "1h PYQ", "1h Revision"] },
-            { "day": "Fri", "blocks": ["2h Mixed Calculus Problems", "1h Weak Areas", "1h Problems", "1h Revision"] },
-            { "day": "Sat", "blocks": ["2h Full Calculus Revision", "2h Problem Marathon", "1h Mock Questions"] },
+            { "day": "Mon", "blocks": ["2h Vector Spaces & Subspaces", "1h Linear Independence", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Span & Basis", "1h Matrix Operations", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h Rank & Nullity", "1h Gaussian Elimination", "1h Problems", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Systems of Linear Equations", "1h Practice Problems", "1h Mixed Problems", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Projection & Orthogonal Matrices", "1h Problems", "1h Weak Topic Review", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Full Topic Revision", "2h Problem Marathon", "1h Mock Questions"] },
             { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
           ]
         },
         {
           "week": 6,
-          "focus": "Calculus Optimization",
+          "focus": "Eigenvalues and Eigenvectors",
           "topics": [
-            "Single-variable maxima and minima",
-            "Taylor series approximation",
-            "Multivariable optimization",
-            "Constrained optimization"
+            "Eigenvalues",
+            "Eigenvectors",
+            "Diagonalization",
+            "Orthogonal matrices"
           ],
-          "problem_target": 70,
+          "problem_target": 60,
           "daily_plan": [
-            { "day": "Mon", "blocks": ["2h Single-Variable Maxima & Minima", "1h First/Second Derivative Test", "1h Problems", "1h Revision"] },
-            { "day": "Tue", "blocks": ["2h Taylor Series Expansion", "1h Approximation Questions", "1h Problems", "1h Revision"] },
-            { "day": "Wed", "blocks": ["2h Partial Derivatives & Critical Points", "1h Gradient and Hessian Basics", "1h Problems", "1h Revision"] },
-            { "day": "Thu", "blocks": ["2h Constrained Optimization", "1h Lagrange Multipliers", "1h PYQ", "1h Revision"] },
-            { "day": "Fri", "blocks": ["2h Mixed Calculus Optimization Problems", "1h Weak Areas", "1h Problems", "1h Revision"] },
-            { "day": "Sat", "blocks": ["2h Full Calculus Optimization Revision", "2h Problem Marathon", "1h Mock Questions"] },
-            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Formula Revision", "1h Light Revision"] }
+            { "day": "Mon", "blocks": ["2h Eigenvalue Theory", "1h Characteristic Equation", "1h Problems", "1h Revision"] },
+            { "day": "Tue", "blocks": ["2h Eigenvectors & Properties", "1h Diagonalization", "1h Problems", "1h Revision"] },
+            { "day": "Wed", "blocks": ["2h SVD Introduction", "1h LU Decomposition", "1h Problems", "1h Revision"] },
+            { "day": "Thu", "blocks": ["2h Quadratic Forms", "1h Orthogonal Matrices", "1h Problems", "1h Revision"] },
+            { "day": "Fri", "blocks": ["2h Mixed LA Problems", "1h PYQ Practice", "1h Weak Areas", "1h Revision"] },
+            { "day": "Sat", "blocks": ["2h Full LA Revision", "2h Problem Marathon", "1h Mock Questions"] },
+            { "day": "Sun", "blocks": ["2h PYQ Practice", "1h Weak Areas", "1h Light Revision"] }
           ]
         },
         {
